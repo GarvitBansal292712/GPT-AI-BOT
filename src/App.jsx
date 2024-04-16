@@ -1,14 +1,14 @@
 import './App.css'
+import Navbar from './components/Navbar'
 import Home from './pages/Home'
 
 function App() {
 
   return (
     <>
+    <Navbar/>
     <Home/>
-      <div>
-        Hey I am a chat bot! Using Open AI Api to generate responses.
-      </div>
+
     </>
   )
 }

@@ -1,8 +1,12 @@
 import React from 'react'
-
+import figmaimg4 from '../assets/images/figmaimg4.jpeg'
 const Home = () => {
   return (
-    <div className='w-full h-[100vh] bg-gradient-to-br from-blue-100 via-purple-200 to-yellow-200 '>HEADER</div>
+    <>
+    <div className='w-full p-4 h-[50vh] bg-cover bg-center font-mono text-white' style={{backgroundImage: `url(${figmaimg4})`}}>
+
+    </div>
+    </>
   )
 }
 
