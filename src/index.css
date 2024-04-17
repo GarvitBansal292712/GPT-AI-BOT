@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.logo{
+    animation: rotate 10s linear infinite; /* Adjust duration as needed */
+    
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  .backimg{
+    background: rgba(0, 36, 82, 0.45) url(assets/images/figmaimg4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+
+  }
