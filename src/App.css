@@ -1,3 +1,27 @@
 body{
     background-color: #000712;
 }
+
+/* Width */
+::-webkit-scrollbar {
+    width: 5px; /* Change this value as per your preference */
+  
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000712; 
+    /* White background color */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff; /* Bar color */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000; /* Darken the color on hover if desired */
+  }
+  
