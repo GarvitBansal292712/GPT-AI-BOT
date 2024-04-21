@@ -1,5 +1,5 @@
 import '../index.css' // Add this line
-
+import { Link } from "react-router-dom";
 import React from "react";
 import logo from "../assets/images/logo.png"
 const Navbar = () => {
@@ -16,8 +16,14 @@ const Navbar = () => {
             </div>
             <div>
               <ul className="flex gap-4 ">
+                <Link to="/">
                 <li>Home</li>
+                
+                </Link>
+                <Link to="/chat">
                 <li>Chat</li>
+                
+                </Link>
               </ul>
             </div>
           </div>

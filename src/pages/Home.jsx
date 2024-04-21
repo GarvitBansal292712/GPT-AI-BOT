@@ -1,9 +1,9 @@
 import React from "react";
-import figmaimg4 from "../assets/images/figmaimg4.jpeg";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
-import logo from "../assets/images/logo.png";
 import "../index.css";
+import sample from "../assets/images/demo.png";
 
 const Home = () => {
   return (
@@ -19,26 +19,29 @@ const Home = () => {
               NEW LEVEL <br /> UNLOCKED
             </h1>
             <p className="text-center text-[#c7c3c3]">
-              Turn Pro to harness the power of AI, make NexSphere your own{" "}
-              <br />
-              with custom themes, keep your Macs in sync and more.
+              Step into the world of NexSphere and experience AI-driven
+              communication like never before. <br /> Our chatbot is accessible online,
+              ready to assist <br /> with your queries Anytime, Anywhere!.
             </p>
-            <button
-              className="my-8 p-[8px] rounded-[13px]"
-              style={{
-                background: "linear-gradient(180deg, #4478D7 0%, #166DC1 100%)",
-                color: "white",
-                boxShadow: "0px 4px 4px 0px #FFFFFF40",
-              }}
-            >
-              Let's Get Started
-            </button>
+            <Link to="/chat">
+              <button
+                className="my-8 p-[8px] rounded-[13px]"
+                style={{
+                  background:
+                    "linear-gradient(180deg, #4478D7 0%, #166DC1 100%)",
+                  color: "white",
+                  boxShadow: "0px 4px 4px 0px #FFFFFF40",
+                }}
+              >
+                Let's Get Started
+              </button>
+            </Link>
           </div>
         </div>
       </div>
       {/* Header */}
       {/* Features */}
-      <div className="flex flex-col justify-center items-center font-mono">
+      <div className="flex flex-col justify-center items-center font-mono p-2">
         <h3 className="bg-[#FFFFFF0A] text-white text-center inline py-2 px-6 rounded-[52px] border-[1px] border-[#FFFFFF14] mt-10 ">
           NexSphere AI
         </h3>
@@ -51,7 +54,13 @@ const Home = () => {
           NexSphere. <br /> Deeply integrated and just one keystroke away.
         </p>
         {/* screenshot container of the app  */}
-        <div className="sccont w-[50vw] h-[50vh] bg-[#FFFFFF0D] rounded-[12px] border-[1px] border-[#FFFFFF14] my-3 flex justify-center items-center p-4"></div>
+        <img
+          src={sample}
+          alt=""
+          className="md:w-[600px] w-[700px] flex justify-center items-center m-4"
+        />
+        {/* <div className="sccont w-[50vw]  bg-[#FFFFFF0D] rounded-[12px] border-[1px] border-[#FFFFFF14] my-3 flex justify-center items-center p-8">
+        </div> */}
       </div>
       {/* Features */}
       {/* footer */}
